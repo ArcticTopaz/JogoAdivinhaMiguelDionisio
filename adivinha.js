@@ -40,6 +40,7 @@ function Jogo(numero) {
 	}
 	
     else 
+		// Se o valor introduzido não for um número o jogo não o conta
 		if (isNaN (numero)) {
 			alert ("Só são autorizados números!")
 			vidas++;
@@ -63,6 +64,7 @@ function Jogo(numero) {
  // Função que pergunta ao jogador qual o número máximo com que pretende jogar
 function pedirNumMax() {
 	 var num = parseInt(prompt("Escreve o número máximo"));
+	 // Se o valor introduzido não for um número o jogo não começa
 	 if (isNaN (num)) { 
 		alert ("Só são permitidos números!");
 		 pedirNumMax ();
